@@ -1,0 +1,1 @@
+if (a:=10)%9==1:print(f'{a} is a magic number')
