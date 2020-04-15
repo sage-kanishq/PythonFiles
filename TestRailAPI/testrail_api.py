@@ -4,9 +4,9 @@ from testrail import *
 
 import requests
 
-client = APIClient('https://testrailnewpage.testrail.io/')
-client.user = 'ramesh.chauhan@newpage.io'
-client.password = 'SiRfsGPXSQ5ImWpoENxs'
+client = APIClient('')
+client.user = ''
+client.password = ''
 
 
 def add_result_for_case(*, run_id: int, case_id: int, status: str, msg: str):
@@ -46,6 +46,4 @@ def get_case(case_id:int):
     case = client.send_get("get_case/%d"%(case_id))
     pprint(case)
 
-# Address: https://testrailnewpage.testrail.io/
-# Username: ramesh.chauhan@newpage.io
-# Password: SiRfsGPXSQ5ImWpoENxs
+
