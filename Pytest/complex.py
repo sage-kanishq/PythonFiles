@@ -1,4 +1,6 @@
 from Demo_log_package.log import log
+
+
 def complex():
 	try:
 		a=10
@@ -14,7 +16,7 @@ def complex():
 				zero=one
 				one=tot
 				print(tot,end=' ')
-				d
+
 	except Exception as e:
 		log.logged(e,log.getNameOfFile(__file__))
 complex()

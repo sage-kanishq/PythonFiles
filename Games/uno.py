@@ -1,6 +1,7 @@
 import random
 import os
 import numpy as np
+
 class Card:
     def __init__(self, *args, **kwargs):
         colour = np.array(['blue','yellow','green','red','special'])
@@ -15,32 +16,48 @@ class Card:
         else:
             self.colour = a 
             self.type = b
+
+        
 class Player():
     def __init__(self):
         self.cards = np.array([])
         for i in np.arange(7):
-            self.cards = np.append(self.cards,Card())  
-            print(self.cards[i].colour,self.cards[i].type)     
+            self.cards = np.append(self.cards,Card())
 
-player1 = Player()
-print(x for x in np.nditer(player1.cards,[],['refs_ok']))
+    def pickCard(self):
+        self.cards = np.append(self.cards,Card())
 
-# def next_chance(active:Card):
-#     if active = 
+def showCard(card:Card):
+    print((card.colour,card.type),end="\n")   
+
+def showDeck(player:Player):
+    list(map(showCard,player.cards))
+
+def next_chance(active:Card):
+    if active == player1:
+        active = player2
+    elif active == player2:
+        active = player1
 
 # def functionality(card : Card):
 #     if card.colour != 'special':
 #         if type(card.type) != int:
-            
 
+player1 = Player()
+showDeck(player1)
+player2 = Player()
+
+print(len(player1.cards))
+# while player1.cards:
+
+
+
+
+   
+
+            
     
 
 
-# # def chooseDeck():
-
-
-# # class Player:
-# #     def __init__(self):
-# #         self.cards = 
-        
+       
     

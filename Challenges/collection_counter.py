@@ -1,5 +1,6 @@
 import collections
 # Collecions Counter makes a dict in where it shows how many times does a value occur in an array
+print("heloo world")
 len_size = int(input())
 sizes = list(map(int,input().split(' ')))
 manage = collections.Counter(sizes)

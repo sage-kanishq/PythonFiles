@@ -2,7 +2,7 @@ import sys
 import socket
 from pathlib import Path
 home = str(Path.home())
-def import_env(file):
+def rel_import(file=__file__):
     """
 
     Help with relational imports if doesn't work properly send arg as __file__.

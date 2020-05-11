@@ -1,5 +1,6 @@
 import calc
 import pytest
+
 @pytest.mark.parametrize("test_input,test_output",
                         [
                             (10,100),
