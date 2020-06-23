@@ -1,8 +1,6 @@
-import requests
-import json
-response = requests.get("https://reqres.in/")
-
-print(json.dumps(dict(response.request.headers),indent=2))
+def add(a,b):
+    return a+b
 
 
-
+def minus(a,b):
+    return a - b

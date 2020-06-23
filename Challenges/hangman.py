@@ -105,3 +105,5 @@ def play_game():
 			print(answer,'\n')
 			print('You Win')
 			break
+
+play_game()
